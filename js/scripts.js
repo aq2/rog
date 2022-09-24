@@ -6,15 +6,11 @@ const mymain = document.getElementById('mymain')
 const circle = document.getElementById('circle')
 const nav = document.getElementById('nav')
 
-// open.addEventListener('click', () => container.classList.add('show-nav'))
-// close.addEventListener('click', () => container.classList.remove('show-nav'))
-
 open.addEventListener('click', () => {
   mymain.classList.add('show-nav')
   circle.classList.add('show-nav')
   nav.classList.add('show-nav')
 })
-
 
 close.addEventListener('click', () => {
   mymain.classList.remove('show-nav')
@@ -40,7 +36,6 @@ function run() {
   changeImage()
 }
 
-// blah 
 function changeImage() {
   if (idx > img.length - 1) {
     idx = 0

@@ -112,8 +112,8 @@ a:hover {
 #mymain.show-nav {
   transform: rotate(-20deg);
 }
-.content h1,
-h2 {
+#mymain h1,
+#mymain h2 {
   color: #ffa500;
   padding-left: 5rem;
 }
