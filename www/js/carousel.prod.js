@@ -1,0 +1,1 @@
+"use strict";var w=window.innerWidth,h=window.innerHeight,imgs=document.getElementById("imgs"),img=document.querySelectorAll("#imgs img"),idx=0,interval=setInterval(run,2e3);function run(){idx++,changeImage()}function changeImage(){idx>img.length-1?idx=0:idx<0&&(idx=img.length-1),imgs.style.transform="translateX(".concat(800*-idx,"px)")}
