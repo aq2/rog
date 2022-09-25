@@ -20,32 +20,6 @@ close.addEventListener('click', () => {
 
 
 
-// AQ carousel
-
-// let w = window.innerWidth
-// let h = window.innerHeight
-
-// const imgs = document.getElementById('imgs')
-// const img = document.querySelectorAll('#imgs img')
-
-// let idx = 0
-// let interval = setInterval(run, 2000)
-
-// function run() {
-//   idx++
-//   changeImage()
-// }
-
-// function changeImage() {
-//   if (idx > img.length - 1) {
-//     idx = 0
-//   } else if (idx < 0) {
-//     idx = img.length -1
-//   }
-
-//   imgs.style.transform = `translateX(${-idx * 800}px)`
-// }
-
 //AQ modal
 var modal = document.getElementById('myModal')
 modal.onclick = function() {
@@ -63,6 +37,8 @@ function doModal(pic) {
   var modalImg = document.getElementById("modal-image")
   var captionText = document.getElementById("caption")
   
+  //TODO need tp resize images!
+
   modal.style.display = "block"
   modalImg.src = pic.src
   captionText.innerHTML = pic.alt
