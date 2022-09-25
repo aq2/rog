@@ -103,11 +103,11 @@ a:hover {
   color: #ffa500;
 }
 #mymain {
-  transform-origin: top left;
-  transition: transform 0.5s linear;
   width: 100vw;
   min-height: 100vh;
   padding: 1rem 3rem;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
 }
 #mymain.show-nav {
   transform: rotate(-20deg);
@@ -116,4 +116,83 @@ a:hover {
 #mymain h2 {
   color: #ffa500;
   padding-left: 5rem;
+}
+.page-container {
+  border: 2px solid #f00;
+  display: flex;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+.row img {
+  margin-top: 8px;
+  max-width: 200px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+.row img:hover {
+  opacity: 0.7;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0,0,0,0.8);
+}
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+.toonz {
+  width: 30%;
+  border: solid 2px #00f;
+  min-width: 300px;
 }

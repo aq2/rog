@@ -1,4 +1,35 @@
-extends templates/layout
+include includes/head
+include includes/nav
+include includes/nav-circle.pug
 
 
-h1 something nasty!
+#mymain
+  h1 something nasty in the woodshed
+
+  .page-container
+
+    .photos
+      .row
+        img(src='imgs/snitw/s1.jpg' alt='keyz')
+        img(src='imgs/snitw/s3.jpg')
+        img(src='imgs/snitw/s4.jpg')
+        img(src='imgs/snitw/s6.jpg')
+        img(src='imgs/snitw/s2.jpg')
+        img(src='imgs/snitw/s5.jpg')
+        img(src='imgs/snitw/s7.jpg')
+    // AQ add captions as alts!!!
+
+
+    .toonz
+      p insert toonz
+
+  .blurb
+    p insert blurb
+
+  
+  #myModal.modal
+    span.close &times;
+    .modal-content#modal-image
+    #caption
+
+  script(src='js/scripts.prod.js')
