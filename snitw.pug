@@ -10,13 +10,13 @@ include includes/nav-circle.pug
 
     .photos
       .row
-        img(src='imgs/snitw/s1.jpg' alt='keyz')
-        img(src='imgs/snitw/s3.jpg')
-        img(src='imgs/snitw/s4.jpg')
-        img(src='imgs/snitw/s6.jpg')
-        img(src='imgs/snitw/s2.jpg')
-        img(src='imgs/snitw/s5.jpg')
-        img(src='imgs/snitw/s7.jpg')
+        img.gall(src='imgs/snitw/s1.jpg' alt='ian richardson, briefly on keyz')
+        img.gall(src='imgs/snitw/s3.jpg' alt='nick, fiddle and guitar')
+        img.gall(src='imgs/snitw/s4.jpg' alt='rob hills, bass')
+        img.gall(src='imgs/snitw/s6.jpg' alt='rog hunt, general awesomeness')
+        img.gall(src='imgs/snitw/s2.jpg' alt='julie matthews, singer, writer, flautist')
+        img.gall(src='imgs/snitw/s5.jpg' alt='rog, chris, rob, julie, nick')
+        img.gall(src='imgs/snitw/s7.jpg' alt='rocking out!')
     // AQ add captions as alts!!!
 
 
@@ -29,7 +29,7 @@ include includes/nav-circle.pug
   
   #myModal.modal
     span.close &times;
-    .modal-content#modal-image
+    img.modal-content#modal-image
     #caption
 
   script(src='js/scripts.prod.js')
