@@ -1,6 +1,7 @@
 @import 'carousel.styl'
 @import 'nav.styl'
 // @import 'pages.styl'
+@import 'modal.styl'
 
 *
   box-sizing border-box
@@ -11,7 +12,7 @@ body
   overflow-x hidden
   margin 0
   padding 0
-  margin-top -1.5rem
+  margin-top -2rem
   font-family 'DM Sans', sans-serif
 
 h1, h2, h3, h4
@@ -32,17 +33,20 @@ a:hover
   padding 1rem 3rem
   transform-origin top left
   transition transform 0.5s linear
+  display flex
+  align-items center
+  justify-content center
 
   &.show-nav
     transform rotate(-20deg)
 
   & h1, h2
-    color orange
+    // color orange
     padding-left 5rem
 
   
 .page-container
-  border 2px solid red
+  // border 2px solid red
   display flex 
 
 
@@ -65,67 +69,24 @@ a:hover
     &:hover
       opacity 0.7
 
-.modal
-  display none
-  position fixed
-  z-index 200
-  padding-top 100px
-  left 0
-  top 0
-  width 100%
-  max-height 80vh
-  overflow auto
-  background rgba(0,0,0,0.8)
 
-.modal-content
-  margin auto
-  display block
-  // width 80%
-  max-width 700px
-  max-height 90vh
-  object-fit cover
-
-
-#caption
-  margin auto
-  display block
-  // AQ todo!!!
-  width 80%
-  max-width 700px
-  text-align center
-  color #ccc
-  padding 10px 0
-  height 150px
-
-.modal-content, #caption
-  animation-name zoom
-  animation-duration 0.6s
-
-@keyframes zoom
-  from
-    transform:scale(0)
-  to 
-    transform:scale(1)
-
-.close
-  position absolute
-  top 15px
-  right 35px
-  color #f1f1f1
-  font-size 40px
-  font-weight bold
-  transition 0.3s
-
-.close:hover, .close:focus
-  color #bbb
-  text-decoration none
-  cursor pointer
-
-@media only screen and (max-width: 700px)
-  .modal-content
-    width 100%
 
 .toonz
   width 30%
-  border solid 2px blue
+  // border solid 2px blue
   min-width 300px
+  
+
+  & p
+    // color red
+    margin 0
+    // display inline-block
+    display flex
+    align-items center
+    // border-bottom 2px dotted red
+
+  & audio
+    width 3rem
+    // display inline-block
+    margin 0 0.5rem
+    height 1rem

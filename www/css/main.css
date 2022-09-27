@@ -73,71 +73,6 @@
   transform: translateX(-200%);
   transition: transform 0.4s ease-in;
 }
-* {
-  box-sizing: border-box;
-}
-body {
-  background-color: #000;
-  color: #fff;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  margin-top: -1.5rem;
-  font-family: 'DM Sans', sans-serif;
-}
-h1,
-h2,
-h3,
-h4 {
-  font-family: 'DM Mono', monospace;
-}
-h1 span {
-  font-size: 1.5rem;
-}
-a:link,
-a:visited,
-a:active {
-  color: #f0d;
-}
-a:hover {
-  color: #ffa500;
-}
-#mymain {
-  width: 100vw;
-  min-height: 100vh;
-  padding: 1rem 3rem;
-  transform-origin: top left;
-  transition: transform 0.5s linear;
-}
-#mymain.show-nav {
-  transform: rotate(-20deg);
-}
-#mymain h1,
-#mymain h2 {
-  color: #ffa500;
-  padding-left: 5rem;
-}
-.page-container {
-  border: 2px solid #f00;
-  display: flex;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-  justify-content: center;
-}
-.row img {
-  margin-top: 8px;
-  max-width: 200px;
-  object-fit: contain;
-  cursor: pointer;
-  transition: 0.5s;
-  border-radius: 15px;
-}
-.row img:hover {
-  opacity: 0.7;
-}
 .modal {
   display: none;
   position: fixed;
@@ -192,11 +127,6 @@ a:hover {
     width: 100%;
   }
 }
-.toonz {
-  width: 30%;
-  border: solid 2px #00f;
-  min-width: 300px;
-}
 @-moz-keyframes zoom {
   from {
     transform: scale(0);
@@ -228,4 +158,84 @@ a:hover {
   to {
     transform: scale(1);
   }
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  margin-top: -2rem;
+  font-family: 'DM Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'DM Mono', monospace;
+}
+h1 span {
+  font-size: 1.5rem;
+}
+a:link,
+a:visited,
+a:active {
+  color: #f0d;
+}
+a:hover {
+  color: #ffa500;
+}
+#mymain {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 1rem 3rem;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#mymain.show-nav {
+  transform: rotate(-20deg);
+}
+#mymain h1,
+#mymain h2 {
+  padding-left: 5rem;
+}
+.page-container {
+  display: flex;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+.row img {
+  margin-top: 8px;
+  max-width: 200px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+.row img:hover {
+  opacity: 0.7;
+}
+.toonz {
+  width: 30%;
+  min-width: 300px;
+}
+.toonz p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.toonz audio {
+  width: 3rem;
+  margin: 0 0.5rem;
+  height: 1rem;
 }
