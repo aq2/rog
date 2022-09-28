@@ -57,7 +57,7 @@ a:hover {
 }
 .row img {
   margin-top: 8px;
-  max-width: 200pxs;
+  max-width: 200px;
   object-fit: contain;
   cursor: pointer;
   transition: 0.5s;
