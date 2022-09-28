@@ -1,16 +1,84 @@
-.carousel {
-  overflow: hidden;
-  transition: width 0.5s ease;
-  width: 800px;
+@font-face {
+  font-family: snake;
+  src: url("SnakeChan.ttf");
 }
-.carousel img {
-  height: 450px;
-  width: 800px;
+* {
+  box-sizing: border-box;
 }
-.image-container {
+body {
+  background-color: #000;
+  color: #fff;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  margin-top: -2rem;
+  font-family: 'DM Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: snake, monospace;
+  font-size: 3rem;
+}
+a:link,
+a:visited,
+a:active {
+  color: #f0d;
+}
+a:hover {
+  color: #ffa500;
+}
+#mymain {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 1rem 3rem;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
   display: flex;
-  transform: translateX(0);
-  transition: transform 0.5s ease-in-out;
+  align-items: center;
+  justify-content: center;
+}
+#mymain.show-nav {
+  transform: rotate(-20deg);
+}
+#mymain h1,
+#mymain h2 {
+  padding-left: 5rem;
+}
+.page-container {
+  display: flex;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+  justify-content: center;
+}
+.row img {
+  margin-top: 8px;
+  max-width: 200pxs;
+  object-fit: contain;
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+.row img:hover {
+  opacity: 0.7;
+}
+.toonz {
+  width: 30%;
+  min-width: 300px;
+}
+.toonz p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+.toonz audio {
+  width: 3rem;
+  margin: 0 0.5rem;
+  height: 1rem;
 }
 #circle-container {
   position: fixed;
@@ -33,11 +101,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 100px;
   background: transparent;
   border: 0;
-  font-size: 26px;
-  color: #f0d;
   cursor: pointer;
   outline: none;
 }
@@ -45,13 +110,18 @@
   outline: none;
 }
 #circle button#open {
-  left: 60%;
+  margin-left: 12px;
+  margin-top: 15px;
+  transition: color 0.5s ease;
+  animation: opac 1s infinite alternate;
 }
 #circle button#close {
-  top: 60%;
   transform: rotate(90deg);
   transform-origin: top left;
   outline: none;
+  font-size: 3rem;
+  padding: 1.1rem;
+  font-family: snake;
 }
 #nav.show-nav ul li {
   transform: translateX(0);
@@ -127,6 +197,52 @@
     width: 100%;
   }
 }
+.carousel {
+  overflow: hidden;
+  transition: width 0.5s ease;
+  width: 800px;
+}
+.carousel img {
+  height: 450px;
+  width: 800px;
+}
+.image-container {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+@-moz-keyframes opac {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes opac {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes opac {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes opac {
+  from {
+    opacity: 0.25;
+  }
+  to {
+    opacity: 1;
+  }
+}
 @-moz-keyframes zoom {
   from {
     transform: scale(0);
@@ -158,84 +274,4 @@
   to {
     transform: scale(1);
   }
-}
-* {
-  box-sizing: border-box;
-}
-body {
-  background-color: #000;
-  color: #fff;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  margin-top: -2rem;
-  font-family: 'DM Sans', sans-serif;
-}
-h1,
-h2,
-h3,
-h4 {
-  font-family: 'DM Mono', monospace;
-}
-h1 span {
-  font-size: 1.5rem;
-}
-a:link,
-a:visited,
-a:active {
-  color: #f0d;
-}
-a:hover {
-  color: #ffa500;
-}
-#mymain {
-  width: 100vw;
-  min-height: 100vh;
-  padding: 1rem 3rem;
-  transform-origin: top left;
-  transition: transform 0.5s linear;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#mymain.show-nav {
-  transform: rotate(-20deg);
-}
-#mymain h1,
-#mymain h2 {
-  padding-left: 5rem;
-}
-.page-container {
-  display: flex;
-}
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-  justify-content: center;
-}
-.row img {
-  margin-top: 8px;
-  max-width: 200px;
-  object-fit: contain;
-  cursor: pointer;
-  transition: 0.5s;
-  border-radius: 15px;
-}
-.row img:hover {
-  opacity: 0.7;
-}
-.toonz {
-  width: 30%;
-  min-width: 300px;
-}
-.toonz p {
-  margin: 0;
-  display: flex;
-  align-items: center;
-}
-.toonz audio {
-  width: 3rem;
-  margin: 0 0.5rem;
-  height: 1rem;
 }
