@@ -1,17 +1,11 @@
+* {
+  box-sizing: border-box;
+}
 @font-face {
   font-family: snake;
   src: url("SnakeChan.ttf");
 }
-* {
-  box-sizing: border-box;
-}
 body {
-  background-color: #000;
-  color: #fff;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  margin-top: -2rem;
   font-family: 'DM Sans', sans-serif;
 }
 h1,
@@ -24,10 +18,18 @@ h4 {
 a:link,
 a:visited,
 a:active {
-  color: #f0d;
+  color: #99f;
 }
 a:hover {
-  color: #ffa500;
+  color: #f99;
+}
+body {
+  background-color: #111;
+  color: #bbb;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  margin-top: -2rem;
 }
 #mymain {
   width: 100vw;
@@ -87,7 +89,7 @@ a:hover {
   z-index: 100;
 }
 #circle {
-  background: #ff9799;
+  background: #f99;
   height: 200px;
   width: 200px;
   border-radius: 50%;
@@ -105,6 +107,7 @@ a:hover {
   border: 0;
   cursor: pointer;
   outline: none;
+  animation: opac 1s infinite alternate;
 }
 #circle button:focus {
   outline: none;
@@ -112,8 +115,6 @@ a:hover {
 #circle button#open {
   margin-left: 12px;
   margin-top: 15px;
-  transition: color 0.5s ease;
-  animation: opac 1s infinite alternate;
 }
 #circle button#close {
   transform: rotate(90deg);
@@ -213,7 +214,7 @@ a:hover {
 }
 @-moz-keyframes opac {
   from {
-    opacity: 0.25;
+    opacity: 0.33;
   }
   to {
     opacity: 1;
@@ -221,7 +222,7 @@ a:hover {
 }
 @-webkit-keyframes opac {
   from {
-    opacity: 0.25;
+    opacity: 0.33;
   }
   to {
     opacity: 1;
@@ -229,7 +230,7 @@ a:hover {
 }
 @-o-keyframes opac {
   from {
-    opacity: 0.25;
+    opacity: 0.33;
   }
   to {
     opacity: 1;
@@ -237,7 +238,7 @@ a:hover {
 }
 @keyframes opac {
   from {
-    opacity: 0.25;
+    opacity: 0.33;
   }
   to {
     opacity: 1;
