@@ -43,26 +43,29 @@ function doModal(pic) {
   captionText.innerHTML = pic.alt  
 }
 
-
 //end modal
 
 /// audio
 
-const playBtn = document.getElementById('play')
-const audio = document.getElementById('audio')
 let playing = false
+let buttons = document.getElementsByTagName('button')
 
-playBtn.addEventListener('click', () => {
-  if (!playing) {
-    audio.play()
-    playing = true
-    // change classes
-  }
-  else {
-    audio.pause()
-    playing = false
-    // toggle class between pause and play
-  }
-})
+for (let btn of buttons) {
+  btn.addEventListener(('click'), (e) => {
+    let indexName = e.target.className
+    let audio = document.getElementsByClassName('toon ' + indexName)[0]
+    if (!playing) {
+      audio.play()
+      playing = true
+      btn.style.backgroundImage = 'url(imgs/pause.png)'
+    }
+    else {
+      audio.pause()
+      playing = false
+      btn.style.backgroundImage = 'url(imgs/play.png)'
+    }
+  })
+}
+
 
 //end audio

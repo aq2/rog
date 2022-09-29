@@ -1,22 +1,20 @@
 ##Adders To Be Done##
 
 General:
-
+  ☐ meeja queeries
 
 Home Page:
-  ☐ responsive <850 -> change js and css...
-
 
 Pages:
   ☐ layout? -> margins/padding etc...
   ☐ less blurb?
-  ✔ sticky mp3 div? @done(22-09-29 14:20)
-  ☐ egde styling audio player
+  ✔ egde styling audio player @done(22-09-29 19:57)
   ☐ template, like before?
-  ✔ modal image size! @done(22-09-29 13:41)
-
-
+  ☐ audio script stuff only on pages -> not home
 
 Archive:
+  ✘ responsive <850 -> change js and css... @cancelled(22-09-29 16:20) @project(Home Page)
+  ✔ sticky mp3 div? @done(22-09-29 14:20) @project(Pages)
+  ✔ modal image size! @done(22-09-29 13:41) @project(Pages)
   ✔ Navigation icon - adder? @done(22-09-28 13:44) @project(General)
   ✔ remove stylus imports -> all in one file, with custom folds @done(22-09-28 14:04) @project(General)
