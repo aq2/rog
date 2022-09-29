@@ -31,7 +31,7 @@ body {
   margin-top: -2rem;
   background-color: #111;
 }
-#mymain {
+#main {
   width: 100vw;
   min-height: 100vh;
   padding: 1rem 3rem;
@@ -40,12 +40,15 @@ body {
   display: flex;
   justify-content: space-between;
 }
-#mymain.show-nav {
+#main.show-nav {
   transform: rotate(-20deg);
 }
-#mymain h1,
-#mymain h2 {
+#main h1,
+#main h2 {
   padding-left: 5rem;
+}
+.homecontent {
+  margin: auto;
 }
 .content {
   width: 65%;
@@ -81,7 +84,7 @@ body {
   align-items: center;
 }
 .toonz audio {
-  max-width: 10rem;
+  max-width: 3rem;
   margin: 0 0.5rem;
   height: 1rem;
 }
@@ -189,6 +192,9 @@ body {
   display: flex;
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
+}
+.hmm {
+  display: none;
 }
 @-moz-keyframes opac {
   from {
