@@ -24,12 +24,12 @@ a:hover {
   box-sizing: border-box;
 }
 body {
-  background-color: #111;
-  color: #bbb;
-  overflow-x: hidden;
   margin: 0;
   padding: 0;
+  color: #bbb;
+  overflow-x: hidden;
   margin-top: -2rem;
+  background-color: #111;
 }
 #mymain {
   width: 100vw;
@@ -38,8 +38,7 @@ body {
   transform-origin: top left;
   transition: transform 0.5s linear;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 #mymain.show-nav {
   transform: rotate(-20deg);
@@ -48,16 +47,17 @@ body {
 #mymain h2 {
   padding-left: 5rem;
 }
-.page-container {
-  display: flex;
+.content {
+  width: 65%;
+  height: 150vh;
 }
-.row {
+.photos {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
   justify-content: center;
 }
-.row img {
+.photos img {
   margin-top: 8px;
   max-width: 200px;
   object-fit: contain;
@@ -65,11 +65,14 @@ body {
   transition: 0.5s;
   border-radius: 15px;
 }
-.row img:hover {
+.photos img:hover {
   opacity: 0.7;
 }
 .toonz {
+  top: 10%;
   width: 30%;
+  height: 10vh;
+  position: sticky;
   min-width: 300px;
 }
 .toonz p {

@@ -20,7 +20,7 @@ close.addEventListener('click', () => {
 
 //end nav
 
-//AQ modal
+/// modal
 
 var modal = document.getElementById('modal')
 modal.onclick = function() {

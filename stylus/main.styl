@@ -2,8 +2,6 @@ $fore = #bbb
 $back = #111
 $nav = #f99
 
-
-
 /// typography
 
 @font-face
@@ -30,12 +28,12 @@ a:hover
   box-sizing border-box
 
 body
-  background-color $back
-  color $fore
-  overflow-x hidden
   margin 0
   padding 0
+  color $fore
+  overflow-x hidden
   margin-top -2rem
+  background-color $back
 
 
 #mymain
@@ -45,8 +43,9 @@ body
   transform-origin top left
   transition transform 0.5s linear
   display flex
-  align-items center
-  justify-content center
+  // align-items top
+  justify-content space-between
+  // position relative
 
   &.show-nav
     transform rotate(-20deg)
@@ -55,11 +54,12 @@ body
     padding-left 5rem
 
   
-.page-container
-  display flex 
+.content
+  width 65%
+  height 150vh
 
 
-.row
+.photos
   display flex
   flex-wrap wrap
   padding 0 4px
@@ -79,22 +79,20 @@ body
 
 
 .toonz
+  top 10%
   width 30%
-  // border solid 2px blue
+  height 10vh
+  position sticky
   min-width 300px
   
 
   & p
-    // color red
     margin 0
-    // display inline-block
     display flex
     align-items center
-    // border-bottom 2px dotted red
 
   & audio
     max-width 10rem
-    // display inline-block
     margin 0 0.5rem
     height 1rem
     // AQ don't work in Edge :(
