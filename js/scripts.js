@@ -2,18 +2,18 @@
 
 const open = document.getElementById('open')
 const close = document.getElementById('close')
-const mymain = document.getElementById('mymain')
+const main = document.getElementById('main')
 const circle = document.getElementById('circle')
 const nav = document.getElementById('nav')
 
 open.addEventListener('click', () => {
-  mymain.classList.add('show-nav')
+  main.classList.add('show-nav')
   circle.classList.add('show-nav')
   nav.classList.add('show-nav')
 })
 
 close.addEventListener('click', () => {
-  mymain.classList.remove('show-nav')
+  main.classList.remove('show-nav')
   circle.classList.remove('show-nav')
   nav.classList.remove('show-nav')
 })
@@ -45,3 +45,24 @@ function doModal(pic) {
 
 
 //end modal
+
+/// audio
+
+const playBtn = document.getElementById('play')
+const audio = document.getElementById('audio')
+let playing = false
+
+playBtn.addEventListener('click', () => {
+  if (!playing) {
+    audio.play()
+    playing = true
+    // change classes
+  }
+  else {
+    audio.pause()
+    playing = false
+    // toggle class between pause and play
+  }
+})
+
+//end audio
