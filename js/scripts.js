@@ -21,7 +21,8 @@ close.addEventListener('click', () => {
 //end nav
 
 //AQ modal
-var modal = document.getElementById('myModal')
+
+var modal = document.getElementById('modal')
 modal.onclick = function() {
   modal.style.display = "none"
 }
@@ -37,19 +38,9 @@ function doModal(pic) {
   var modalImg = document.getElementById("modal-image")
   var captionText = document.getElementById("caption")
   
-  //TODO need tp resize images!
-
   modal.style.display = "block"
   modalImg.src = pic.src
-  captionText.innerHTML = pic.alt
-  
-}
-
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+  captionText.innerHTML = pic.alt  
 }
 
 
