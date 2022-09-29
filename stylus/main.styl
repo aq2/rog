@@ -2,8 +2,7 @@ $fore = #bbb
 $back = #111
 $nav = #f99
 
-*
-  box-sizing border-box
+
 
 /// typography
 
@@ -27,6 +26,9 @@ a:hover
 //end typography
 
 /// layout
+*
+  box-sizing border-box
+
 body
   background-color $back
   color $fore
@@ -91,7 +93,7 @@ body
     // border-bottom 2px dotted red
 
   & audio
-    width 3rem
+    max-width 10rem
     // display inline-block
     margin 0 0.5rem
     height 1rem

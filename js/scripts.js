@@ -1,4 +1,4 @@
-//AQ nav
+///  nav
 
 const open = document.getElementById('open')
 const close = document.getElementById('close')
@@ -18,7 +18,7 @@ close.addEventListener('click', () => {
   nav.classList.remove('show-nav')
 })
 
-
+//end nav
 
 //AQ modal
 var modal = document.getElementById('myModal')
@@ -50,4 +50,7 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
-} 
+}
+
+
+//end modal
