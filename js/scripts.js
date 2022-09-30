@@ -1,21 +1,13 @@
 ///  nav
 
-const open = document.getElementById('open')
-const close = document.getElementById('close')
 const main = document.getElementById('main')
 const circle = document.getElementById('circle')
 const nav = document.getElementById('nav')
 
-open.addEventListener('click', () => {
-  main.classList.add('show-nav')
-  circle.classList.add('show-nav')
-  nav.classList.add('show-nav')
-})
-
-close.addEventListener('click', () => {
-  main.classList.remove('show-nav')
-  circle.classList.remove('show-nav')
-  nav.classList.remove('show-nav')
+circle.addEventListener('click', () => {
+  main.classList.toggle('show-nav')
+  circle.classList.toggle('show-nav')
+  nav.classList.toggle('show-nav')
 })
 
 //end nav
