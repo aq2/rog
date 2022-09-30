@@ -86,9 +86,11 @@ h1 {
   object-fit: contain;
   border-radius: 15px;
   margin-right: 0.5rem;
+  border: 2px solid transparent;
 }
 .photos img:hover {
-  opacity: 0.7;
+  opacity: 0.5;
+  border: 2px solid #99f;
 }
 .toonz {
   top: 1%;
@@ -217,12 +219,13 @@ h1 {
   margin: auto;
   display: block;
   max-height: 85%;
+  border-radius: 15px;
 }
 #caption {
   color: #ddd;
   display: block;
   padding: 0.5rem 0;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 #modal-image,
