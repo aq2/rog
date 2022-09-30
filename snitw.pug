@@ -32,49 +32,37 @@ include includes/nav-circle.pug
 
   .toonz
     h2 toonz
-    p 
-      audio(controls='')
-        source(src='mp3s/1-snitw1/01-Man in the Long Coat.mp3')
-      span Man in the Long Black Coat
-    
-    p 
-      audio(controls='')
-        source(src='mp3s/1-snitw1/02-Black Crow.mp3')
-      span Black Crow
-    
-    p 
-      audio(controls='')
-        source(src='mp3s/1-snitw1/03-The Mirror.mp3')
-      span The Mirror
-    
-    p
-      audio(controls='')
-        source(src='mp3s/1-snitw1/04-England Boys.mp3')
-      span England Boys
-    
-    p 
-      audio(controls='')
-        source(src='mp3s/1-snitw1/05-Fat Controller.mp3')
-      span Fat Controller
-    
-    p
-      audio(controls='')
-        source(src='mp3s/1-snitw1/06-Digging My Crown.mp3')
-      span Digging My Crown
-    
-    p 
-      audio(controls='')
-        source(src='mp3s/1-snitw1/07-A Love Like This.mp3')
-      span A Love Like This
-    
-    p
-      audio(controls='')
-        source(src='mp3s/1-snitw1/08-Lone Rider.mp3')
-      span Lone Rider
-
     .song
-      audio.a1.toon(src='mp3s/1-snitw1/08-Lone Rider.mp3')
-      button#play1.a1 
+      audio.a1.toon(src='mp3s/1-snitw1/01-Man in the Long Coat.mp3')
+      button.a1 
+      span Man in the Long Coat
+    .song
+      audio.a2.toon(src='mp3s/1-snitw1/02-Black Crow.mp3')
+      button.a2 
+      span Black Crow
+    .song
+      audio.a3.toon(src='mp3s/1-snitw1/03-The Mirror.mp3')
+      button.a3 
+      span The Mirror
+    .song
+      audio.a4.toon(src='mp3s/1-snitw1/04-England Boys.mp3')
+      button.a4 
+      span England Boys
+    .song
+      audio.a5.toon(src='mp3s/1-snitw1/05-Fat Controller.mp3')
+      button.a5 
+      span Fat Controller
+    .song
+      audio.a6.toon(src='mp3s/1-snitw1/06-Digging My Crown.mp3')
+      button.a6 
+      span Digging My Crown
+    .song
+      audio.a7.toon(src='mp3s/1-snitw1/07-A Love Like This.mp3')
+      button.a7
+      span A Love Like This
+    .song
+      audio.a8.toon(src='mp3s/1-snitw1/08-Lone Rider.mp3')
+      button.a8 
       span Lone Rider
     //- sure this can be improved
     //- make .song clickable and use its class to identify? eg song.s1
