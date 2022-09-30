@@ -2,21 +2,28 @@
 
 General:
   ☐ meeja queeries
-  ☐ snitw2 Don't Believe toon corrupt
-  ☐ rog bring tapes for jackroller
   ☐ happy home on CD is jackroller toon
   ☐ change all css pixels to rems?
-
+  ☐ tweak h1 gradient colors?
+  
 Home Page:
-
+    
 Pages:
   ☐ layout? -> margins/padding etc...
   ☐ less blurb?
   ☐ audio script stuff only on pages -> not home
-  ✔ change track name color/style whilst playing @done(30-09-22 15:29)
   ☐ stop two audios at once
+      
+Rog:
+  ☐ rog bring tapes for jackroller
+  ☐ ask rog for disc - snitw2 "Don't Believe" corrupt
+
+
+
+#################################################
 
 Archive:
+  ✔ change track name color/style whilst playing @done(30-09-22 15:29) @project(Pages)
   ✔ egde styling audio player @project(Pages) @done(30-09-22 14:14)
   ✘ template, like before? @project(Pages) @cancelled(30-09-22 14:14)
   ✘ responsive <850 -> change js and css... @project(Home Page) @cancelled(30-09-22 14:14)
