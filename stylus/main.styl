@@ -13,18 +13,22 @@ body
   font-family 'DM Sans', sans-serif
 
 h1
-  font-family snake, monospace
   font-size 2.5rem
+  text-align center
+  font-family snake, monospace
 
 h2
   font-family snake, monospace
 
-
 a:link, a:visited, a:active
   color $triad
+  font-size 1.25rem
+  text-decoration none
 
 a:hover
   color $nav
+  text-decoration underline
+
 
 //end typography
 
@@ -37,18 +41,18 @@ body
   margin 0
   padding 0
   color $fore
-  overflow-x hidden
   margin-top -2rem
+  overflow-x hidden
   background-color $back
 
 #main
   width 100vw
+  display flex
   min-height 100vh
   padding 1rem 3rem
   transform-origin top left
-  transition transform 0.5s linear
-  display flex
   justify-content space-between
+  transition transform 0.5s linear
 
   &.show-nav
     transform rotate(-20deg)
@@ -65,16 +69,16 @@ body
 
 .photos
   display flex
-  flex-wrap wrap
   padding 0 4px
+  flex-wrap wrap
   justify-content center
 
   & img
     margin-top 8px
-    max-width 200px
-    object-fit contain
     cursor pointer
+    max-width 200px
     transition 0.5s
+    object-fit contain
     border-radius 15px
 
     &:hover
@@ -82,10 +86,10 @@ body
 
 .toonz
   top 1%
-  width 30%
+  width 25%
   height 10vh
   position sticky
-  min-width 300px
+  min-width 250px
 
   & p
     margin 0
@@ -102,41 +106,38 @@ body
 /// nav
 
 #circle-container
-  position fixed
   top -100px
   left -100px
   z-index 100
+  position fixed
 
 #circle
-  background $nav
-  height 200px
   width 200px
-  border-radius 50%
+  height 200px
+  background $nav
   position relative
+  border-radius 50%
   transition transform 0.5s linear
-
 
 #circle.show-nav
   transform rotate(-90deg)
 
 #circle button 
-  position absolute
   top 50%
   left 50%
-  background transparent
   border 0
-  cursor pointer
   outline none
+  cursor pointer
+  position absolute
+  background transparent
   animation opac 1s infinite alternate
 
 #circle button:focus
   outline none
 
-
 #circle button#open
-  margin-left 12px
   margin-top 15px
-  // transition color 0.5s ease
+  margin-left 12px
 
 @keyframes opac
   from
@@ -144,61 +145,66 @@ body
   to
     opacity 1
 
-
 #circle button#close
-  // top 50%
+  outline none
+  padding 1.1rem
+  font-size 3rem
+  font-family snake
   transform rotate(90deg)
   transform-origin top left
-  outline none
-  font-size 3rem
-  // margin-bottom 4rem
-  // margin-left 3rem
-  // color red
-  // margin-right 4rem
-  // margin auto
-  padding 1.1rem
-  font-family snake
-
-
-
-
-#nav.show-nav ul li
-  transform translateX(0)
-  transition-delay 0.3s
 
 #nav
-  position fixed
-  bottom 40px
   left 0
+  bottom 40px
   z-index 100
+  position fixed
 
+#nav.show-nav ul li
+  transition-delay 0.3s
+  transform translateX(0)
 
 #nav ul 
   list-style none
   padding-left 30px
 
-
-#nav ul li 
-  // text-transform uppercase
+#nav ul li
   color #345fff
   margin 10px 0
   transform translateX(-200%)
   transition transform 0.4s ease-in
 
-
-// nav ul li i
-//   font-size 20px
-//   margin-right 20px
-
-
-// nav ul li + li
-//   margin-left 15px
-//   transform translateX(-150%)
+#nav ul li + li
+  margin-left 15px
+  transform translateX(-150%)
 
 
-// nav ul li + li + li
-//   margin-left30px
-//   transformtranslateX(-200%)
+#nav ul li + li + li
+  margin-left 30px
+  transform translateX(-200%)
+
+#nav ul li + li + li + li
+  margin-left 45px
+  transform translateX(-250%)
+
+#nav ul li + li + li + li + li
+  margin-left 60px
+  transform translateX(-300%)
+
+#nav ul li + li + li + li + li + li
+  margin-left 75px
+  transform translateX(-350%)
+
+#nav ul li + li + li + li + li + li + li
+  margin-left 90px
+  transform translateX(-400%)
+
+#nav ul li + li + li + li + li + li + li + li
+  margin-left 115px
+  transform translateX(-450%)
+
+#nav ul li + li + li + li + li + li + li + li + li
+  margin-left 130px
+  transform translateX(-500%)
 
 //end nav
 
