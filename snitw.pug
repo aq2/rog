@@ -29,9 +29,9 @@ include includes/nav-circle.pug
       p Some early sessions featured a few self-penned numbers with Matthew Smith (briefly on bass and recording), Ian Richardson (on keys for a short while) and Nick Martin playing fiddle and electric guitar.
       p This got us the attention of a local recording studio in Honiton: Daylight Music, run by Ian Dent,who recorded our first 3 track session and put a song called <i>The Mirror</i> (lyrics/tune by Julie and rest by Rog) on a compilation of 24 Devon Bands, with the risqué coastal-rock title <i>Long and Pink</i>!
       //end blurb
-      
 
   .toonz
+    h2 toonz
     p 
       audio(controls='')
         source(src='mp3s/1-snitw1/01-Man in the Long Coat.mp3')
@@ -72,16 +72,13 @@ include includes/nav-circle.pug
         source(src='mp3s/1-snitw1/08-Lone Rider.mp3')
       span Lone Rider
 
-    //- audio#audio(src='mp3s/1-snitw1/08-Lone Rider.mp3')
-    //- button#play Lone Rider >
-    
     .song
-      //- img.butt(src='imgs/play.png')
       audio.a1.toon(src='mp3s/1-snitw1/08-Lone Rider.mp3')
       button#play1.a1 
-        span.but 
       span Lone Rider
-
+    //- sure this can be improved
+    //- make .song clickable and use its class to identify? eg song.s1
+    //- bit bodgy at moment!
   
   #modal
     img#modal-image

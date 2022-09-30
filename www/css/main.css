@@ -5,12 +5,12 @@
 body {
   font-family: 'DM Sans', sans-serif;
 }
-h1,
-h2,
-h3,
-h4 {
+h1 {
   font-family: snake, monospace;
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+h2 {
+  font-family: snake, monospace;
 }
 a:link,
 a:visited,
@@ -72,7 +72,7 @@ body {
   opacity: 0.7;
 }
 .toonz {
-  top: 10%;
+  top: 1%;
   width: 30%;
   height: 10vh;
   position: sticky;
@@ -193,17 +193,18 @@ body {
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
 }
-button {
-  background: #111;
-  background-image: url("../imgs/play.png");
-  background-repeat: no-repeat;
-  width: 1.75rem;
-  height: 1.5rem;
-  border: none;
-}
 .song {
   display: flex;
   align-items: center;
+}
+.song button {
+  border: none;
+  width: 1.75rem;
+  height: 1.5rem;
+  cursor: pointer;
+  background: #111;
+  background-repeat: no-repeat;
+  background-image: url("../imgs/play.png");
 }
 @-moz-keyframes opac {
   from {

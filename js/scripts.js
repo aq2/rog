@@ -48,7 +48,7 @@ function doModal(pic) {
 /// audio
 
 let playing = false
-let buttons = document.getElementsByTagName('button')
+let buttons = document.querySelectorAll('.song button')
 
 for (let btn of buttons) {
   btn.addEventListener(('click'), (e) => {
@@ -58,6 +58,7 @@ for (let btn of buttons) {
       audio.play()
       playing = true
       btn.style.backgroundImage = 'url(imgs/pause.png)'
+      // change text colour to hilite playing toon?
     }
     else {
       audio.pause()
