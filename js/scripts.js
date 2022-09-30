@@ -51,6 +51,7 @@ let playing = false
 let buttons = document.querySelectorAll('.song button')
 let songNames = document.querySelectorAll('span')
 let audios = document.getElementsByTagName('audio')
+let songs = document.querySelectorAll('.song')
 
 for (let btn of buttons) {
   btn.addEventListener(('click'), (e) => {
@@ -73,6 +74,34 @@ for (let btn of buttons) {
 }
 
 
+// should really check if clicked on playing song...
+for (let song of songs) {
+  song.addEventListener(('click'), (e) => {
+    let name = song.className
+    // remove 6 chars 'song a' to get index
+    // then subtract 1 as arrays start at 0
+    let index = name.substring(6) - 1
+    let audio = audios[index]
+    let span = songNames[index]
+    let btn = buttons[index]
+
+    if (!playing) {
+      audio.play()
+      playing = true
+      // should style these as classes, then toggle...
+      btn.style.backgroundImage = 'url(imgs/pause-blue.png)'
+      // span.style.color = 'blue'
+    } else {
+      audio.pause()
+      playing = false
+      btn.style.backgroundImage = 'url(imgs/play.png)'
+      // span.style.color = 'white'
+    }
+    span.classList.toggle('playing')
+
+
+  })
+}
 
 
 //end audio

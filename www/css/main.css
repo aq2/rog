@@ -206,6 +206,9 @@ body {
   background-repeat: no-repeat;
   background-image: url("../imgs/play.png");
 }
+span.playing {
+  color: #99f;
+}
 .spacer {
   height: 2rem;
 }

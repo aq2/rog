@@ -1,6 +1,7 @@
 $fore = #bbb
 $back = #111
 $nav = #f99
+$triad = #99f
 
 /// typography
 
@@ -20,7 +21,7 @@ h2
 
 
 a:link, a:visited, a:active
-  color #99f
+  color $triad
 
 a:hover
   color $nav
@@ -271,6 +272,9 @@ body
     background $back
     background-repeat no-repeat
     background-image url(../imgs/play.png)
+
+span.playing
+  color $triad
 
 .spacer
   height 2rem

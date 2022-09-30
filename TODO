@@ -3,20 +3,22 @@
 General:
   ☐ meeja queeries
   ☐ snitw2 Don't Believe toon corrupt
+  ☐ rog bring tapes for jackroller
+  ☐ happy home on CD is jackroller toon
 
 Home Page:
 
 Pages:
   ☐ layout? -> margins/padding etc...
   ☐ less blurb?
-  ✔ egde styling audio player @done(22-09-29 19:57)
-  ☐ template, like before?
   ☐ audio script stuff only on pages -> not home
   ☐ change track name color/style whilst playing
 
 Archive:
-  ✘ responsive <850 -> change js and css... @cancelled(22-09-29 16:20) @project(Home Page)
-  ✔ sticky mp3 div? @done(22-09-29 14:20) @project(Pages)
-  ✔ modal image size! @done(22-09-29 13:41) @project(Pages)
-  ✔ Navigation icon - adder? @done(22-09-28 13:44) @project(General)
-  ✔ remove stylus imports -> all in one file, with custom folds @done(22-09-28 14:04) @project(General)
+  ✔ egde styling audio player @project(Pages) @done(30-09-22 14:14)
+  ✘ template, like before? @project(Pages) @cancelled(30-09-22 14:14)
+  ✘ responsive <850 -> change js and css... @project(Home Page) @cancelled(30-09-22 14:14)
+  ✔ sticky mp3 div? @project(Pages) @done(30-09-22 14:15)
+  ✔ modal image size! @project(Pages) @done(30-09-22 14:15)
+  ✔ Navigation icon - adder? @project(General) @done(30-09-22 14:15)
+  ✔ remove stylus imports -> all in one file, with custom folds @project(General) @done(30-09-22 14:15)
