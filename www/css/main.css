@@ -6,7 +6,7 @@ body {
   font-family: 'DM Sans', sans-serif;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   text-align: center;
 }
 h1,
@@ -23,6 +23,16 @@ a:active {
 a:hover {
   color: #f99;
   text-decoration: underline;
+}
+.smallL,
+.smallR {
+  font-size: 2.5rem;
+}
+.smallL {
+  margin-right: 2rem;
+}
+.smallR {
+  margin-left: 2rem;
 }
 * {
   box-sizing: border-box;
@@ -54,6 +64,10 @@ body {
 .homecontent {
   margin: auto;
 }
+h1 {
+  display: flex;
+  align-items: center;
+}
 .content {
   width: 65%;
   height: 150vh;
@@ -71,6 +85,7 @@ body {
   transition: 0.5s;
   object-fit: contain;
   border-radius: 15px;
+  margin-right: 0.5rem;
 }
 .photos img:hover {
   opacity: 0.7;
@@ -216,13 +231,14 @@ body {
   animation-duration: 0.6s;
 }
 .carousel {
+  width: 800px;
   overflow: hidden;
   transition: width 0.5s ease;
-  width: 800px;
 }
 .carousel img {
-  height: 450px;
   width: 800px;
+  height: 450px;
+  border-radius: 2rem;
 }
 .image-container {
   display: flex;
