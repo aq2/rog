@@ -206,6 +206,12 @@ body {
   background-repeat: no-repeat;
   background-image: url("../imgs/play.png");
 }
+.song button.playing {
+  background-image: url("../imgs/pause-blue.png");
+}
+.song:hover {
+  color: #99f;
+}
 span.playing {
   color: #99f;
 }

@@ -12,7 +12,8 @@ Pages:
   ☐ layout? -> margins/padding etc...
   ☐ less blurb?
   ☐ audio script stuff only on pages -> not home
-  ☐ change track name color/style whilst playing
+  ✔ change track name color/style whilst playing @done(30-09-22 15:29)
+  ☐ stop two audios at once
 
 Archive:
   ✔ egde styling audio player @project(Pages) @done(30-09-22 14:14)

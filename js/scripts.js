@@ -48,37 +48,16 @@ function doModal(pic) {
 /// audio
 
 let playing = false
-let buttons = document.querySelectorAll('.song button')
+let songs = document.querySelectorAll('.song')
 let songNames = document.querySelectorAll('span')
 let audios = document.getElementsByTagName('audio')
-let songs = document.querySelectorAll('.song')
-
-for (let btn of buttons) {
-  btn.addEventListener(('click'), (e) => {
-    let indexName = e.target.className
-    let audio = document.getElementsByClassName('toon ' + indexName)[0]
-    let songName = document.getElementsByClassName('toon ' + indexName)[0]
-    
-    if (!playing) {
-      audio.play()
-      playing = true
-      btn.style.backgroundImage = 'url(imgs/pause.png)'
-      // change text colour to hilite playing toon?
-    }
-    else {
-      audio.pause()
-      playing = false
-      btn.style.backgroundImage = 'url(imgs/play.png)'
-    }
-  })
-}
-
+let buttons = document.querySelectorAll('.song button')
 
 // should really check if clicked on playing song...
 for (let song of songs) {
   song.addEventListener(('click'), (e) => {
     let name = song.className
-    // remove 6 chars 'song a' to get index
+    // remove 6 chars 'song s' to get index
     // then subtract 1 as arrays start at 0
     let index = name.substring(6) - 1
     let audio = audios[index]
@@ -88,18 +67,13 @@ for (let song of songs) {
     if (!playing) {
       audio.play()
       playing = true
-      // should style these as classes, then toggle...
-      btn.style.backgroundImage = 'url(imgs/pause-blue.png)'
-      // span.style.color = 'blue'
+      // let playingIndex = index
     } else {
       audio.pause()
       playing = false
-      btn.style.backgroundImage = 'url(imgs/play.png)'
-      // span.style.color = 'white'
     }
+    btn.classList.toggle('playing')
     span.classList.toggle('playing')
-
-
   })
 }
 
