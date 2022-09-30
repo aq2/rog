@@ -206,6 +206,9 @@ body {
   background-repeat: no-repeat;
   background-image: url("../imgs/play.png");
 }
+.spacer {
+  height: 2rem;
+}
 @-moz-keyframes opac {
   from {
     opacity: 0.33;

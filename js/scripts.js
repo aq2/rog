@@ -49,11 +49,15 @@ function doModal(pic) {
 
 let playing = false
 let buttons = document.querySelectorAll('.song button')
+let songNames = document.querySelectorAll('span')
+let audios = document.getElementsByTagName('audio')
 
 for (let btn of buttons) {
   btn.addEventListener(('click'), (e) => {
     let indexName = e.target.className
     let audio = document.getElementsByClassName('toon ' + indexName)[0]
+    let songName = document.getElementsByClassName('toon ' + indexName)[0]
+    
     if (!playing) {
       audio.play()
       playing = true
