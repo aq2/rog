@@ -6,10 +6,10 @@ body {
   font-family: 'DM Sans', sans-serif;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   text-align: center;
-  font-family: snake, monospace;
 }
+h1,
 h2 {
   font-family: snake, monospace;
 }
