@@ -14,25 +14,21 @@ circle.addEventListener('click', () => {
 
 /// modal
 
-var modal = document.getElementById('modal')
-modal.onclick = function() {
-  modal.style.display = "none"
-}
-
 let images = document.getElementsByClassName('gall')
 for (let pic of images) {
-  pic.addEventListener(('click'), () => {
-    doModal(pic)
+  pic.addEventListener('click', () => {
+    let modal = document.getElementById('modal')
+    let modalImg = document.getElementById("modal-image")
+    let captionText = document.getElementById("caption")
+  
+    modal.style.display = "block"
+    modalImg.src = pic.src
+    captionText.innerHTML = pic.alt  
   })
 }
 
-function doModal(pic) {
-  var modalImg = document.getElementById("modal-image")
-  var captionText = document.getElementById("caption")
-  
-  modal.style.display = "block"
-  modalImg.src = pic.src
-  captionText.innerHTML = pic.alt  
+modal.onclick = function() {
+  modal.style.display = "none"
 }
 
 //end modal
@@ -47,7 +43,7 @@ let buttons = document.querySelectorAll('.song button')
 
 // should really check if clicked on playing song...
 for (let song of songs) {
-  song.addEventListener(('click'), (e) => {
+  song.addEventListener('click', (e) => {
     let name = song.className
     // remove 6 chars 'song s' to get index
     // then subtract 1 as arrays start at 0

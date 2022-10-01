@@ -1,0 +1,53 @@
+include includes/head
+include includes/nav
+include includes/nav-circle.pug
+
+
+#main
+  .content
+    h1
+      .smallL ~~
+      .normal bedouin
+      .smallR ~~
+    
+    .photos
+      img.gall(src='imgs/bedouin.jpg' alt='rog, with best friend (only kidding)')
+
+    .blurb
+      p Having pretty much gone our separate ways, musically and otherwise, it fell on Rog to continue something.
+      p From 1996 or so, there are recordings of other songs by Rog on his own, under the bizarrely name of <i>BEDOUIN</i>.
+      p A CD was sent off to producers,  with one reply being that the songs were not 'jolly enough' – at a time of Radiohead !
+      
+  .toonz
+    h2 toonz
+    .song.s1
+      audio(src='mp3s/3-bedouin/01-Deadhead.mp3')
+      button 
+      span Deadhead
+
+    .song.s2
+      audio(src='mp3s/3-bedouin/02-Taxis.mp3')
+      button 
+      span Taxis
+
+    .song.s3
+      audio(src='mp3s/3-bedouin/03-Strings.mp3')
+      button 
+      span Strings
+
+    .song.s4
+      audio(src='mp3s/3-bedouin/04-Sweetest Love.mp3')
+      button 
+      span Sweetest Love
+
+    .song.s5
+      audio(src='mp3s/3-bedouin/05-Autumn Sky.mp3')
+      button 
+      span Autumn Sky
+
+
+  #modal
+    img#modal-image
+    #caption
+
+  script(src='js/scripts.prod.js')
