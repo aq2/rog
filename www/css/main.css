@@ -254,6 +254,18 @@ h1 {
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
 }
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: #add8e6;
+  }
+  .carousel {
+    width: 700px;
+  }
+  .image-container img {
+    width: 700px;
+    border: 2px solid #f00;
+  }
+}
 .song {
   display: flex;
   align-items: center;
