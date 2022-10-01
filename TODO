@@ -2,9 +2,8 @@
 
 General:
   ☐ meeja queeries
-  ✔ happy home on CD is jackroller toon @done(01-10-22 12:08)
   ☐ change all css pixels to rems?
-  ✔ tweak h1 gradient colors? @done(30-09-22 16:52)
+  ☐ add tooltips? to pix?
   
 Home Page:
     
@@ -18,11 +17,11 @@ Rog:
   ☐ rog bring tapes for jackroller
   ☐ ask rog for disc - snitw2 "Don't Believe" corrupt
 
-
-
 #################################################
 
 Archive:
+  ✔ happy home on CD is jackroller toon @done(01-10-22 12:08) @project(General)
+  ✔ tweak h1 gradient colors? @done(30-09-22 16:52) @project(General)
   ✔ change track name color/style whilst playing @done(30-09-22 15:29) @project(Pages)
   ✔ egde styling audio player @project(Pages) @done(30-09-22 14:14)
   ✘ template, like before? @project(Pages) @cancelled(30-09-22 14:14)
