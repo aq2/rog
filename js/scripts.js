@@ -40,6 +40,7 @@ let songs = document.querySelectorAll('.song')
 let songNames = document.querySelectorAll('span')
 let audios = document.getElementsByTagName('audio')
 let buttons = document.querySelectorAll('.song button')
+let playingIndex = null
 
 // should really check if clicked on playing song...
 for (let song of songs) {
@@ -53,12 +54,24 @@ for (let song of songs) {
     let btn = buttons[index]
 
     if (!playing) {
+      audio.currentTime = 0
       audio.play()
       playing = true
-      // let playingIndex = index
+      playingIndex = index
     } else {
-      audio.pause()
-      playing = false
+      if (playingIndex == index) {
+        audio.pause()
+        playing = false
+      } else {
+        // clicked on track whilst playing another
+        audios[playingIndex].pause()
+        audio.currentTime = 0
+        audio.play()
+        playing = true
+        buttons[playingIndex].classList.toggle('playing')
+        songNames[playingIndex].classList.toggle('playing')
+        playingIndex = index
+      }
     }
     btn.classList.toggle('playing')
     span.classList.toggle('playing')
