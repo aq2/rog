@@ -6,7 +6,6 @@ body {
   src: url("SnakeChan.ttf");
 }
 h1 {
-  padding: 1rem 0;
   font-size: 4rem;
   align-items: center;
   display: inline-flex;
@@ -16,6 +15,7 @@ h1 {
 }
 h1,
 h2 {
+  padding: 1rem 0;
   font-family: snake, monospace;
 }
 p {
