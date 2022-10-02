@@ -9,7 +9,6 @@ Home Page:
 Pages:
   ☐ layout? -> margins/padding etc...
   ☐ less blurb?
-  ☐ include scripts in includes?
   ☐ audio script stuff only on pages -> not home
   ☐ stop two audios at once
       
@@ -18,9 +17,13 @@ Rog:
   ☐ ask rog for disc - snitw2 "Don't Believe" corrupt
   ☐ register the adders.co.uk
 
+  
+##
 #################################################
+##
 
 Archive:
+  ✘ include scripts in includes? @cancelled(02-10-22 11:48) @project(Pages)
   ✔ change all css pixels to rems? @done(02-10-22 11:34) @project(General)
   ✔ happy home on CD is jackroller toon @done(01-10-22 12:08) @project(General)
   ✔ tweak h1 gradient colors? @done(30-09-22 16:52) @project(General)
