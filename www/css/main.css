@@ -6,7 +6,7 @@ body {
   font-family: 'DM Sans', sans-serif;
 }
 h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
   background: linear-gradient(to right, #ff9, #f99, #f9f, #99f, #9f9, #9ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -41,20 +41,17 @@ a:hover {
 }
 * {
   box-sizing: border-box;
-}
-body {
   margin: 0;
   padding: 0;
+}
+body {
   color: #bbb;
-  margin-top: -2rem;
   overflow-x: hidden;
   background-color: #111;
 }
 #main {
-  width: 100vw;
   display: flex;
-  min-height: 100vh;
-  padding: 1rem 4rem;
+  padding: 0rem 4rem;
   transform-origin: top left;
   justify-content: space-between;
   transition: transform 0.5s linear;
@@ -66,9 +63,14 @@ body {
   margin: auto;
   text-align: center;
 }
+.homecontent p {
+  text-align: center;
+  padding-top: 1rem;
+}
 h1 {
   display: inline-flex;
   align-items: center;
+  padding: 1rem 0;
 }
 .content {
   text-align: center;
@@ -240,13 +242,15 @@ h1 {
   animation-duration: 0.6s;
 }
 .carousel {
-  width: 800px;
+  width: 1920px;
   overflow: hidden;
   transition: width 0.5s ease;
+  padding-bottom: 2rem;
+  margin: 0 auto;
 }
 .carousel img {
-  width: 800px;
-  height: 450px;
+  width: 1920px;
+  height: auto;
   border-radius: 2rem;
 }
 .image-container {
@@ -254,16 +258,52 @@ h1 {
   transform: translateX(0);
   transition: transform 0.5s ease-in-out;
 }
-@media only screen and (max-width: 900px) {
-  body {
-    background-color: #add8e6;
-  }
+@media only screen and (max-width: 1980px) {
   .carousel {
-    width: 700px;
+    width: 1200px;
   }
   .image-container img {
-    width: 700px;
-    border: 2px solid #f00;
+    width: 1200px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .carousel {
+    width: 1000px;
+  }
+  .image-container img {
+    width: 1000px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .carousel {
+    width: 800px;
+  }
+  .image-container img {
+    width: 800px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .carousel {
+    width: 600px;
+  }
+  .image-container img {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .carousel {
+    width: 500px;
+  }
+  .image-container img {
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .carousel {
+    width: 350px;
+  }
+  .image-container img {
+    width: 350px;
   }
 }
 .song {
