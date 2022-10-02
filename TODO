@@ -2,7 +2,6 @@
 
 General:
   ☐ meeja queeries
-  ☐ change all css pixels to rems?
   ☐ add tooltips? to pix?
   
 Home Page:
@@ -22,6 +21,7 @@ Rog:
 #################################################
 
 Archive:
+  ✔ change all css pixels to rems? @done(02-10-22 11:34) @project(General)
   ✔ happy home on CD is jackroller toon @done(01-10-22 12:08) @project(General)
   ✔ tweak h1 gradient colors? @done(30-09-22 16:52) @project(General)
   ✔ change track name color/style whilst playing @done(30-09-22 15:29) @project(Pages)

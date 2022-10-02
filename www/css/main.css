@@ -16,7 +16,9 @@ h2 {
   font-family: snake, monospace;
 }
 p {
+  margin: 1rem 0;
   text-align: left;
+  font-size: 1.2rem;
 }
 a:link,
 a:visited,
@@ -40,9 +42,9 @@ a:hover {
   margin-left: 2rem;
 }
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body {
   color: #bbb;
@@ -68,30 +70,29 @@ body {
   padding-top: 1rem;
 }
 h1 {
-  display: inline-flex;
-  align-items: center;
   padding: 1rem 0;
+  align-items: center;
+  display: inline-flex;
 }
 .content {
-  text-align: center;
   width: 65%;
   height: 150vh;
+  text-align: center;
 }
 .photos {
   display: flex;
-  padding: 0 4px;
   flex-wrap: wrap;
+  padding: 1rem 0.25rem;
   justify-content: center;
 }
 .photos img {
-  margin-top: 8px;
   cursor: pointer;
   max-width: 200px;
   transition: 0.5s;
   object-fit: contain;
   border-radius: 15px;
-  margin-right: 0.5rem;
-  border: 2px solid transparent;
+  margin-top: 0.25rem;
+  margin-right: 0.75rem;
 }
 .photos img:hover {
   opacity: 0.5;
@@ -100,8 +101,8 @@ h1 {
   top: 1%;
   width: 25%;
   height: 10vh;
-  position: sticky;
   min-width: 250px;
+  position: sticky;
 }
 .toonz p {
   margin: 0;
@@ -109,9 +110,9 @@ h1 {
   align-items: center;
 }
 .toonz audio {
+  height: 1rem;
   max-width: 3rem;
   margin: 0 0.5rem;
-  height: 1rem;
 }
 #circle-container {
   top: -100px;
@@ -148,8 +149,8 @@ h1 {
   outline: none;
 }
 #circle button#open {
-  margin-top: 15px;
-  margin-left: 12px;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 #circle button#close {
   outline: none;
@@ -161,7 +162,7 @@ h1 {
 }
 #nav {
   left: 0;
-  bottom: 40px;
+  bottom: 3rem;
   z-index: 100;
   position: fixed;
 }
@@ -171,44 +172,44 @@ h1 {
 }
 #nav ul {
   list-style: none;
-  padding-left: 30px;
+  padding-left: 2rem;
 }
 #nav ul li {
   color: #345fff;
-  margin: 10px 0;
+  margin: 1rem 0;
   transform: translateX(-200%);
   transition: transform 0.4s ease-in;
 }
 #nav ul li + li {
-  margin-left: 15px;
+  margin-left: 1rem;
   transform: translateX(-150%);
 }
 #nav ul li + li + li {
-  margin-left: 30px;
+  margin-left: 2rem;
   transform: translateX(-200%);
 }
 #nav ul li + li + li + li {
-  margin-left: 45px;
+  margin-left: 3rem;
   transform: translateX(-250%);
 }
 #nav ul li + li + li + li + li {
-  margin-left: 60px;
+  margin-left: 4rem;
   transform: translateX(-300%);
 }
 #nav ul li + li + li + li + li + li {
-  margin-left: 75px;
+  margin-left: 5rem;
   transform: translateX(-350%);
 }
 #nav ul li + li + li + li + li + li + li {
-  margin-left: 90px;
+  margin-left: 6rem;
   transform: translateX(-400%);
 }
 #nav ul li + li + li + li + li + li + li + li {
-  margin-left: 115px;
+  margin-left: 7rem;
   transform: translateX(-450%);
 }
 #nav ul li + li + li + li + li + li + li + li + li {
-  margin-left: 130px;
+  margin-left: 8rem;
   transform: translateX(-500%);
 }
 #modal {
