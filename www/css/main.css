@@ -1,12 +1,15 @@
+body {
+  font-family: 'DM Sans', sans-serif;
+}
 @font-face {
   font-family: snake;
   src: url("SnakeChan.ttf");
 }
-body {
-  font-family: 'DM Sans', sans-serif;
-}
 h1 {
+  padding: 1rem 0;
   font-size: 4rem;
+  align-items: center;
+  display: inline-flex;
   background: linear-gradient(to right, #ff9, #f99, #f9f, #99f, #9f9, #9ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -69,13 +72,8 @@ body {
   text-align: center;
   padding-top: 1rem;
 }
-h1 {
-  padding: 1rem 0;
-  align-items: center;
-  display: inline-flex;
-}
 .content {
-  width: 65%;
+  width: 80%;
   height: 150vh;
   text-align: center;
 }
@@ -99,9 +97,8 @@ h1 {
 }
 .toonz {
   top: 1%;
-  width: 25%;
+  width: 15%;
   height: 10vh;
-  min-width: 250px;
   position: sticky;
 }
 .toonz p {
