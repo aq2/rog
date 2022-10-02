@@ -1,15 +1,11 @@
 ##Adders To Be Done##
 
 General:
-  ☐ meeja queeries
   ☐ add tooltips? to pix?
   
 Home Page:
     
 Pages:
-  ☐ layout? -> margins/padding etc...
-  ☐ less blurb?
-  ☐ audio script stuff only on pages -> not home
   ☐ stop two audios at once
       
 Rog:
@@ -17,12 +13,15 @@ Rog:
   ☐ ask rog for disc - snitw2 "Don't Believe" corrupt
   ☐ register the adders.co.uk
 
-  
 ##
 #################################################
 ##
 
 Archive:
+  ✔ meeja queeries @done(02-10-22 12:28) @project(General)
+  ✔ layout? -> margins/padding etc... @done(02-10-22 12:28) @project(Pages)
+  ✔ less blurb? @done(02-10-22 12:13) @project(Pages)
+  ✘ audio script stuff only on pages -> not home @cancelled(02-10-22 12:29) @project(Pages)
   ✘ include scripts in includes? @cancelled(02-10-22 11:48) @project(Pages)
   ✔ change all css pixels to rems? @done(02-10-22 11:34) @project(General)
   ✔ happy home on CD is jackroller toon @done(01-10-22 12:08) @project(General)

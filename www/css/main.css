@@ -44,6 +44,21 @@ a:hover {
 .smallR {
   margin-left: 2rem;
 }
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .smallL,
+  .smallR {
+    font-size: 1.5rem;
+  }
+  .toonz span {
+    font-size: 0.95rem;
+  }
+  #main {
+    padding: 0 1rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -99,6 +114,7 @@ body {
   top: 1%;
   width: 15%;
   height: 10vh;
+  min-width: 200px;
   position: sticky;
 }
 .toonz p {
