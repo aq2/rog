@@ -71,7 +71,7 @@ body {
 }
 #main {
   display: flex;
-  padding: 0rem 4rem;
+  padding-left: 4rem;
   transform-origin: top left;
   justify-content: space-between;
   transition: transform 0.5s linear;
@@ -110,11 +110,20 @@ body {
 .photos img:hover {
   opacity: 0.5;
 }
+.blurb.long {
+  column-count: 2;
+  column-gap: 40px;
+  padding-top: 2rem;
+  column-rule: 1px dashed rgba(187,187,187,0.3);
+}
+.blurb.long p {
+  margin-top: 0;
+}
 .toonz {
   top: 1%;
   width: 15%;
   height: 10vh;
-  min-width: 200px;
+  min-width: 210px;
   position: sticky;
 }
 .toonz p {
@@ -322,19 +331,20 @@ body {
 }
 .song {
   display: flex;
+  cursor: pointer;
+  font-size: 1.1rem;
   align-items: center;
 }
 .song button {
   border: none;
   width: 1.75rem;
   height: 1.5rem;
-  cursor: pointer;
   background: #111;
   background-repeat: no-repeat;
   background-image: url("../imgs/play.png");
 }
 .song button.playing {
-  background-image: url("../imgs/pause-blue.png");
+  background-image: url("../imgs/stop.png");
 }
 .song:hover {
   color: #99f;

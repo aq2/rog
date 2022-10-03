@@ -78,7 +78,7 @@ body
 
 #main
   display flex
-  padding 0rem 4rem
+  padding-left 4rem
   transform-origin top left
   justify-content space-between
   transition transform 0.5s linear
@@ -106,7 +106,6 @@ body
   flex-wrap wrap
   padding 1rem 0.25rem
   justify-content center
-
   & img
     cursor pointer
     max-width 200px
@@ -115,16 +114,22 @@ body
     border-radius 15px
     margin-top 0.25rem
     margin-right 0.75rem
-
     &:hover
       opacity 0.5
 
+.blurb.long
+    column-count 2
+    column-gap: 40px;
+    padding-top 2rem
+    column-rule: 1px dashed rgba(187,187,187,0.3)
+    & p
+      margin-top 0
 
 .toonz
   top 1%
   width 15%
   height 10vh
-  min-width 200px
+  min-width 210px
   position sticky
 
   & p
@@ -352,19 +357,20 @@ body
 
 .song
   display flex
+  cursor pointer
+  font-size 1.1rem
   align-items center
 
   & button
     border none
     width 1.75rem
     height 1.5rem
-    cursor pointer
     background $back
     background-repeat no-repeat
     background-image url(../imgs/play.png)
 
   & button.playing
-    background-image url(../imgs/pause-blue.png)
+    background-image url(../imgs/stop.png)
 
   &:hover
     color $triad
