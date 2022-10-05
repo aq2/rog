@@ -14,7 +14,6 @@ circle.addEventListener('click', () => {
 
 /// modal
 
-// let images = document.getElementsByClassName('gall')
 let images = document.querySelectorAll('.gall')
 
 images.forEach(pic => {
@@ -29,9 +28,9 @@ images.forEach(pic => {
   })
 })
 
-modal.onclick = function() {
-  modal.style.display = "none"
-}
+modal.addEventListener('click', () => {
+  modal.style.display = 'none'
+})
 
 //end modal
 
@@ -63,7 +62,7 @@ songs.forEach(song => {
         audio.pause()
         playing = false
       } else {
-        // clicked on track whilst playing another
+        // clicked-on track whilst playing another
         audios[playingIndex].pause()
         playAudio(audio)
         buttons[playingIndex].classList.toggle('playing')
