@@ -14,8 +14,10 @@ circle.addEventListener('click', () => {
 
 /// modal
 
-let images = document.getElementsByClassName('gall')
-for (let pic of images) {
+// let images = document.getElementsByClassName('gall')
+let images = document.querySelectorAll('.gall')
+
+images.forEach(pic => {
   pic.addEventListener('click', () => {
     let modal = document.getElementById('modal')
     let modalImg = document.getElementById("modal-image")
@@ -25,7 +27,7 @@ for (let pic of images) {
     modalImg.src = pic.src
     captionText.innerHTML = pic.alt  
   })
-}
+})
 
 modal.onclick = function() {
   modal.style.display = "none"
@@ -42,8 +44,7 @@ let audios = document.getElementsByTagName('audio')
 let buttons = document.querySelectorAll('.song button')
 let playingIndex = null
 
-// should really check if clicked on playing song...
-for (let song of songs) {
+songs.forEach(song => {
   song.addEventListener('click', (e) => {
     let name = song.className
     // remove 6 chars 'song s' to get index
@@ -53,11 +54,10 @@ for (let song of songs) {
     let span = songNames[index]
     let btn = buttons[index]
 
+    // check if track already playing
     if (!playing) {
-      audio.currentTime = 0
-      audio.play()
-      playing = true
       playingIndex = index
+      playAudio(audio)
     } else {
       if (playingIndex == index) {
         audio.pause()
@@ -65,9 +65,7 @@ for (let song of songs) {
       } else {
         // clicked on track whilst playing another
         audios[playingIndex].pause()
-        audio.currentTime = 0
-        audio.play()
-        playing = true
+        playAudio(audio)
         buttons[playingIndex].classList.toggle('playing')
         songNames[playingIndex].classList.toggle('playing')
         playingIndex = index
@@ -76,6 +74,12 @@ for (let song of songs) {
     btn.classList.toggle('playing')
     span.classList.toggle('playing')
   })
+})
+
+function playAudio(audio) {
+  audio.currentTime = 0
+  audio.play()
+  playing = true
 }
 
 
