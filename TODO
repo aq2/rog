@@ -1,8 +1,6 @@
 *##  Adders To Be Done  ##*
 
 General:
-  ☐ add tooltips? to pix?, snake?
-  ☐ do new tapes
   ☐ new discs
   ☐ point theadders.co.uk => need verification code back from rog...
   
@@ -11,15 +9,17 @@ Home Page:
 Pages:
       
 Rog:
-  ✔ rog bring tapes for jackroller @done(08-10-22 14:12)
   ☐ ask rog for disc - snitw2 "Don't Believe" corrupt
-  ✔ register the adders.co.uk @done(08-10-22 14:12)
 
 ##
 #################################################
 ##
 
 Archive:
+  ✘ add tooltips? to pix?, snake? @cancelled(08-10-22 14:59) @project(General)
+  ✔ do new tapes @done(08-10-22 14:59) @project(General)
+  ✔ rog bring tapes for jackroller @done(08-10-22 14:12) @project(Rog)
+  ✔ register the adders.co.uk @done(08-10-22 14:12) @project(Rog)
   ✔ stop two audios at once @done(02-10-22 13:59) @project(Pages)
   ✔ meeja queeries @done(02-10-22 12:28) @project(General)
   ✔ layout? -> margins/padding etc... @done(02-10-22 12:28) @project(Pages)
