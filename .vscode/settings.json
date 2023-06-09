@@ -1,5 +1,13 @@
 {
   "livePugCompiler.savePath": "/CompiledHTML",
   "compile-hero.config": "",
-  "compile-hero.watch": ""
+  "compile-hero.watch": "",
+  "compile-hero.disable-compile-files-on-did-save-code": false,
+  "compile-hero.jade-output-toggle": false,
+  "compile-hero.less-output-toggle": false,
+  "compile-hero.pug-output-directory": "./www",
+  "compile-hero.sass-output-toggle": false,
+  "compile-hero.scss-output-toggle": false,
+  "compile-hero.stylus-output-directory": "../www/css",
+  "compile-hero.typescriptx-output-toggle": false
 }
